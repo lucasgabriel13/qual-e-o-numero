@@ -1,0 +1,8 @@
+{
+  "name": "desafio-studiosol",
+  "description": "Aplicação para acertar qual o é número entre 0 a 300",
+  "version": "1.0.0",
+  "main": "./src/main.js",
+  "author": "Lucas Gonçalves",
+  "license": "MIT"
+}

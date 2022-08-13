@@ -1,0 +1,87 @@
+.number {
+  max-width: 7.45rem;
+  height: 13.5rem;
+  position: relative;
+}
+
+.number .display {
+  background-color: var(--gray-100);
+}
+
+.number .display.on {
+  background-color: var(--gray-700);
+}
+
+.number .display-segment-a {
+  width: 7rem;
+  height: 1.5rem;
+  clip-path: polygon(0 0, 100% 0, 80% 90%, 20% 90%);
+  border-radius: 1rem;
+}
+
+.number .display-segment-b {
+  width: 7rem;
+  height: 1.5rem;
+  clip-path: polygon(0 0, 100% 0, 80% 90%, 20% 90%);
+  border-radius: 5px;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 2.8rem;
+  right: -2.7rem;
+}
+
+.number .display-segment-c {
+  width: 7rem;
+  height: 1.5rem;
+  clip-path: polygon(0 0, 100% 0, 80% 90%, 20% 90%);
+  border-radius: 5px;
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 2.5rem;
+  right: -2.7rem;
+}
+
+.number .display-segment-d {
+  width: 7rem;
+  height: 1.5rem;
+  clip-path: polygon(0 0, 100% 0, 80% 90%, 20% 90%);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -0.38rem;
+  transform: rotateX(180deg);
+}
+
+.number .display-segment-e {
+  width: 7rem;
+  height: 1.5rem;
+  clip-path: polygon(0 0, 100% 0, 80% 90%, 20% 90%);
+  border-radius: 5px;
+  transform: rotate(90deg) rotateX(180deg);
+  position: absolute;
+  bottom: 2.5rem;
+  left: -2.7rem;
+}
+
+.number .display-segment-f {
+  width: 7rem;
+  height: 1.5rem;
+  clip-path: polygon(0 0, 100% 0, 80% 90%, 20% 90%);
+  border-radius: 5px;
+  transform: rotate(90deg) rotateX(180deg);
+  position: absolute;
+  top: 2.8rem;
+  left: -2.7rem;
+}
+
+.number .display-segment-g {
+  width: 6.2rem;
+  height: 1.6rem;
+  position: absolute;
+  top: 6.1rem;
+  left: 0.4rem;
+  clip-path: polygon(88% 0, 100% 47%, 88% 100%, 12% 100%, 0 50%, 12% 0);
+}
+
+#number .numbers-content {
+  display: flex;
+}

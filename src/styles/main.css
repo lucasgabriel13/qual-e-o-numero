@@ -1,0 +1,118 @@
+.main-container {
+  width: 365px;
+  margin-top: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.6rem;
+  background: linear-gradient(174.92deg, #ef6c00 18.47%, #db6300 36.57%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.main-container h1::after {
+  content: "";
+  width: 25.5rem;
+  height: 1px;
+  background: var(--gray-200);
+  top: 5.6rem;
+  left: 4rem;
+  position: absolute;
+}
+
+.number-container {
+  margin: 10.8rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.number-container .status {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: var(--orange-400);
+  margin-bottom: 2.6rem;
+}
+
+.number-container .status.winner {
+  color: var(--green-400);
+}
+
+.number-container .status.error {
+  text-transform: uppercase;
+  color: var(--error-color);
+}
+
+.number-container .number-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.number-container .number-content.winner .number .display.on {
+  background-color: var(--green-400);
+}
+
+.number-container .number-content.error .number .display.on {
+  background-color: var(--error-color);
+}
+
+.number-container span + span {
+  font-size: 150px;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  margin: 17rem 0 5.9rem;
+}
+
+.form-container input {
+  width: 100%;
+  height: 4.2rem;
+  margin-right: 1.1rem;
+  padding: 0 1.2rem;
+  border: 1px solid var(--gray-200);
+  color: var(--gray-700);
+  border-radius: 0.4rem;
+}
+
+.form-container input:focus {
+  border: 1px solid var(--orange-400);
+}
+
+.form-container .button-submit {
+  width: 7rem;
+  height: 4.2rem;
+  border-radius: 0.4rem;
+  border: 0;
+  background: var(--orange-linear);
+}
+
+.form-container.disabled input:focus {
+  border: 1px solid var(--gray-100);
+}
+
+.form-container.disabled .button-submit {
+  background: var(--gray-100);
+  cursor: not-allowed;
+}
+
+.new-game {
+  width: 13rem;
+  height: 4.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 0.4rem;
+  background: var(--gray-linear);
+}

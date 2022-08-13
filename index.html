@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./src/styles/global.css">
+        <link rel="stylesheet" href="./src/styles/main.css">
+        <link rel="stylesheet" href="./src/styles/display.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <title>Qual é o número?</title>
+    </head>
+    <body onload="onLoad()">
+        <main class="main-container">
+            <h1>Qual é o número?</h1>
+            <div class="number-container">
+                <span class="status"></span>
+                <div class="number-content">
+                    <span class="number display-none" data-number="first">
+                        <div class="display display-segment-a" data-segment="a"></div>
+                        <div class="display display-segment-b" data-segment="b"></div>
+                        <div class="display display-segment-c" data-segment="c"></div>
+                        <div class="display display-segment-d" data-segment="d"></div>
+                        <div class="display display-segment-e" data-segment="e"></div>
+                        <div class="display display-segment-f" data-segment="f"></div>
+                        <div class="display display-segment-g" data-segment="g"></div>
+                    </span >
+                    <span class="number display-none" data-number="second">
+                        <div class="display display-segment-a" data-segment="a"></div>
+                        <div class="display display-segment-b" data-segment="b"></div>
+                        <div class="display display-segment-c" data-segment="c"></div>
+                        <div class="display display-segment-d" data-segment="d"></div>
+                        <div class="display display-segment-e" data-segment="e"></div>
+                        <div class="display display-segment-f" data-segment="f"></div>
+                        <div class="display display-segment-g" data-segment="g"></div>
+                    </span >
+                    <span class="number display-none" data-number="third">
+                        <div class="display display-segment-a" data-segment="a"></div>
+                        <div class="display display-segment-b" data-segment="b"></div>
+                        <div class="display display-segment-c" data-segment="c"></div>
+                        <div class="display display-segment-d" data-segment="d"></div>
+                        <div class="display display-segment-e" data-segment="e"></div>
+                        <div class="display display-segment-f" data-segment="f"></div>
+                        <div class="display display-segment-g" data-segment="g"></div>
+                    </span >
+                </div>
+            </div>
+            <button class="new-game sr-only">
+                <span class="icon-refresh">
+                    <img src="./src/assets/refresh_outlined.svg" alt="icon refresh">
+                </span>
+                Nova partida
+            </button>
+            <form class="form-container">
+                <input id="input-guess-number" type="number" placeholder="Digite o palpite">
+                <button class="button-submit" type="submit">Enviar</button>
+            </form>
+        </main>
+    </body>
+    <script src="./src/main.js"></script>
+</html>
